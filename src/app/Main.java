@@ -7,7 +7,9 @@ public class Main {
         System.out.println("Bienvenido a la Calculadora");
 
         Scanner sc = new Scanner(System.in);
+        char continuar;
 
+        do{
         System.out.println("==== CALCULADORA ====");
         System.out.println("1. Sumar");
         System.out.println("2. Restar");
@@ -43,7 +45,12 @@ public class Main {
         }
 
         System.out.println("Resultado: " + resultado);
+            System.out.print("¿Deseas continuar? (s/n): ");
+            continuar = sc.next().charAt(0);
+
+        } while (continuar == 's' || continuar == 'S');
     }
+
 
 
 
