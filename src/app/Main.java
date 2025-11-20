@@ -29,7 +29,13 @@ public class Main {
             case 1 -> resultado = a + b;
             case 2 -> resultado = a - b;
             case 3 -> resultado = a * b;
-            case 4 -> resultado = a / b;
+            case 4 -> {
+                if (b == 0) {
+                    System.out.println("Error: división por cero no permitida");
+                    return;
+                }
+                resultado = a / b;
+            }
             default -> {
                 System.out.println("Opción inválida");
                 return;
