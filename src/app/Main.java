@@ -16,15 +16,37 @@ public class Main {
         System.out.print("Seleccione una opción: ");
 
         int opcion = sc.nextInt();
+
+        double a, b, resultado;
+
+        System.out.print("Ingrese primer número: ");
+        a = sc.nextDouble();
+
+        System.out.print("Ingrese segundo número: ");
+        b = sc.nextDouble();
+
+        switch (opcion) {
+            case 1 -> resultado = a + b;
+            case 2 -> resultado = a - b;
+            case 3 -> resultado = a * b;
+            case 4 -> resultado = a / b;
+            default -> {
+                System.out.println("Opción inválida");
+                return;
+            }
+        }
+
+        System.out.println("Resultado: " + resultado);
     }
 
 
 
+
     }
 
 
 
-}
+
 
 
 
